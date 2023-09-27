@@ -12,7 +12,6 @@ section .container {
 }
 
 section .container .left_content {
-    width: 40%;
     box-sizing: inherit;
 }
 
@@ -34,7 +33,7 @@ section .container .search {
 }
 
 section .container .search .button1 {
-    padding: 10px 58px 10px 20px;
+    padding: 10px 40px 10px 20px;
     font-size: 16px;
     color: var(--heading-color);
     border: 2px solid rgb(255 255 255 / 29%);
@@ -54,4 +53,57 @@ section .container .search .button1 .search-input {
     width: 75%;
     border: none;
     outline: none;
+}
+
+section .container .search .button1 button {
+    border: none;
+    background: transparent;
+    float: right;
+}
+
+section .container .search .button1 i {
+    color: #ff6e65;
+}
+
+section .left_content .backtohome {
+    background: none;
+    border-radius: 35px;
+    color: #eee;
+    display: inline-block;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.backtohome a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.backtohome a i {
+    margin-right: 5px;
+}
+
+.backtohome a:hover {
+    color: #ff6e65;
+}
+
+
+.back-to-top {
+    width: 40px;
+    height: 40px;
+    background: #0d369f;
+    border-radius: 8px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    position: fixed;
+    bottom: 90px;
+    right: 15px;
+    color: white;
+
+}
+
+.back-to-top i {
+    transform: rotate(90deg)
 }

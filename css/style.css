@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,42 +9,43 @@
     box-shadow: none !important;
 }
 
-.header_area .header_top .header_top_contents{
+.header_area .header_top .header_top_contents {
     background: #0d369f;
 }
 
 .header_area .header_top .contact ul,
-.header_area .header_top .social_media ul{
+.header_area .header_top .social_media ul {
     font-size: 15px;
     margin: 0;
+    width: 100%;
 }
 
 .header_area .header_top .contact ul li,
-.header_area .header_top .social_media ul{
+.header_area .header_top .social_media ul {
     list-style: none;
 }
 
 .header_area .header_top .contact ul li a,
-.header_area .header_top .social_media ul li a{
+.header_area .header_top .social_media ul li a {
     text-decoration: none;
     font-weight: 600;
     color: #ffffff;
 }
 
-.header_area .header_top .contact ul li a i{
+.header_area .header_top .contact ul li a i {
     margin-right: 5px;
     font-size: 13px;
 }
 
-.header_area .header_top .contact ul li a i:last-child{
+.header_area .header_top .contact ul li a i:last-child {
     font-size: 15px;
 }
 
-.header_area .header_top .social_media ul li a i{
+.header_area .header_top .social_media ul li a i {
     font-size: 15px;
 }
 
-.header_area header .nav_area nav .container-fluid a{
+.header_area header .nav_area nav .container-fluid a {
     font-size: 26px;
     font-weight: 600;
     text-decoration: none;
@@ -52,7 +53,7 @@
     color: #0d369f;
 }
 
-.header_area header .nav_area nav .container-fluid .navbar_items ul li a{
+.header_area header .nav_area nav .container-fluid .navbar_items ul li a {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
@@ -65,12 +66,12 @@
 .header_area header .nav_area nav .container-fluid .navbar_items ul li:hover .nav-link,
 .header_area header .nav_area nav .container-fluid .navbar_items ul li ul li:hover .dropdown-item,
 .header_area header .nav_area nav .container-fluid .navbar_items form button:hover,
-.header_area header .nav_area nav .container-fluid .navbar_items .change_theme:hover{
+.header_area header .nav_area nav .container-fluid .navbar_items .change_theme:hover {
     color: #ff6e65;
     background: transparent;
 }
 
-.header_area header .nav_area nav .container-fluid .navbar_items form{
+.header_area header .nav_area nav .container-fluid .navbar_items form {
     width: 250px;
     border: 1px solid #eeeeee;
     border-radius: 100px;
@@ -78,7 +79,7 @@
     text-align: center;
 }
 
-.header_area header .nav_area nav .container-fluid .navbar_items form input{
+.header_area header .nav_area nav .container-fluid .navbar_items form input {
     width: 205px;
     font-size: 15px;
     border: none;
@@ -88,7 +89,7 @@
     border-radius: 20px;
 }
 
-.header_area header .nav_area nav .container-fluid .navbar_items form button{
+.header_area header .nav_area nav .container-fluid .navbar_items form button {
     color: #0d369f;
     font-weight: 600;
     position: absolute;
@@ -97,7 +98,7 @@
     transition: all 0.5s;
 }
 
-.header_area header .nav_area nav .container-fluid .navbar_items .change_theme{
+.header_area header .nav_area nav .container-fluid .navbar_items .change_theme {
     transform: rotate(-45deg);
     color: #0d369f;
     font-weight: 600;
@@ -111,16 +112,16 @@
     transform: translate(-50%, 0) !important;
 }
 
-.footer_area{
+.footer_area {
     display: block;
 }
 
-.footer_area .footer_content{
+.footer_area .footer_content {
     padding: 80px 0;
     background: #060e1f;
 }
 
-.footer_area .footer_content .container .footer_items .custom_form{
+.footer_area .footer_content .container .footer_items .custom_form {
     max-width: 1000px;
     border-radius: 10px;
     padding: 50px;
@@ -132,23 +133,25 @@
     z-index: 1000;
     background: #ffffff;
 }
-.footer_area .custom_form .left h4{
+
+.footer_area .custom_form .left h4 {
     font-size: 35px;
     color: #060606;
     font-weight: 600;
 }
 
-.footer_area .custom_form .left span{
+.footer_area .custom_form .left span {
     font-size: 15px;
     color: #707070;
 }
 
-.footer_area .custom_form .right form input{
+.footer_area .custom_form .right form input {
     font-size: 16px;
     border: 1px solid #eeeeee;
     border-radius: 5px 0 0 5px;
 }
-.footer_area .custom_form .right form button{
+
+.footer_area .custom_form .right form button {
     font-size: 16px;
     background: #0d369f;
     font-weight: 600;
@@ -156,11 +159,11 @@
     border-radius: 0 5px 5px 0;
 }
 
-.footer_area .footer_content .container .footer_items .row{
+.footer_area .footer_content .container .footer_items .row {
     margin-top: 110px;
 }
 
-.footer_area .footer_content .container .footer_items .row .item h6{
+.footer_area .footer_content .container .footer_items .row .item h6 {
     color: #ffffff;
     font-size: 16px;
     font-weight: 600;
@@ -170,58 +173,58 @@
     margin-bottom: 20px;
 }
 
-.footer_area .footer_content .container .footer_items .row .item ul{
+.footer_area .footer_content .container .footer_items .row .item ul {
     padding: 0;
     margin: 0;
 }
 
-.footer_area .footer_content .container .footer_items .row .item:last-child{
+.footer_area .footer_content .container .footer_items .row .item:last-child {
     border-left: 1px solid #40495282;
 }
 
-.footer_area .footer_content .container .footer_items .row .item ul li{
+.footer_area .footer_content .container .footer_items .row .item ul li {
     list-style: none;
     margin-bottom: 10px;
 }
 
-.footer_area .footer_content .container .footer_items .row .item ul li a{
+.footer_area .footer_content .container .footer_items .row .item ul li a {
     font-size: 14px;
     color: #cecece;
     text-decoration: none;
     transition: all 0.5s;
 }
 
-.footer_area .footer_content .container .footer_items .row .item ul li:hover a{
+.footer_area .footer_content .container .footer_items .row .item ul li:hover a {
     color: #ffffff;
 }
 
-.footer_area .footer_content .container .footer_items .row .item ul li a i{
+.footer_area .footer_content .container .footer_items .row .item ul li a i {
     font-size: 9px;
     color: #ffffff;
     margin-right: 5px;
 }
 
-.footer_area .footer_content .container .footer_items .row .item ul li p{
+.footer_area .footer_content .container .footer_items .row .item ul li p {
     font-size: 15px;
     color: #cecece;
 }
 
-.footer_area .footer_content .container .footer_items .row .item:nth-child(3) ul li a{
+.footer_area .footer_content .container .footer_items .row .item:nth-child(3) ul li a {
     font-size: 15px;
 }
 
 .footer_area .footer_content .container .footer_items .row .item:nth-child(3) ul li a i,
-.footer_area .footer_content .container .footer_items .row .item ul li p i{
+.footer_area .footer_content .container .footer_items .row .item ul li p i {
     font-size: 15px;
     color: #ffffff;
     margin-right: 20px;
 }
 
-.footer_area .footer_content .container .footer_items .row .item:nth-child(3) ul li:nth-child(2){
+.footer_area .footer_content .container .footer_items .row .item:nth-child(3) ul li:nth-child(2) {
     margin-top: 10px;
 }
 
-.footer_area .footer_content .container .footer_items .row .item ul li .social_list a{
+.footer_area .footer_content .container .footer_items .row .item ul li .social_list a {
     color: #ffffff;
     width: 35px;
     height: 35px;
@@ -230,22 +233,21 @@
     background: #ffffff0f;
 }
 
-.footer_area .footer_content .container .footer_items .row .item ul li .social_list a i{
+.footer_area .footer_content .container .footer_items .row .item ul li .social_list a i {
     font-size: 15px;
     line-height: 35px;
     margin: 0;
 }
 
-.footer_area .copyright{
+.footer_area .copyright {
     background: #000;
 }
 
-.footer_area .copyright p{
+.footer_area .copyright p {
     font-size: 15px;
     color: #a0a0a0;
 }
 
-.footer_area .copyright p span{
+.footer_area .copyright p span {
     color: #ffffff;
 }
-

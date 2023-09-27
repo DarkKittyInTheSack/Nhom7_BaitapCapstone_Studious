@@ -1,0 +1,57 @@
+section .backgroud404 {
+    background: url('./../img/error.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+section .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
+}
+
+section .container .left_content {
+    width: 40%;
+    box-sizing: inherit;
+}
+
+section .left_content h2 {
+    font-size: 160px;
+    color: #fff;
+    line-height: 1;
+    font-weight: 500;
+}
+
+section .container h1 {
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+}
+
+section .container .search {
+    position: relative;
+}
+
+section .container .search .button1 {
+    padding: 10px 58px 10px 20px;
+    font-size: 16px;
+    color: var(--heading-color);
+    border: 2px solid rgb(255 255 255 / 29%);
+    border-radius: 35px;
+    background: #fff;
+    appearance: none;
+}
+
+section .container .search .button1 .clickbtn {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+}
+
+section .container .search .button1 .search-input {
+    width: 75%;
+    border: none;
+    outline: none;
+}

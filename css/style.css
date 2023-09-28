@@ -249,3 +249,352 @@
     color: #ffffff;
 }
 
+.owl-carousel .item{
+    width: 1450px!important;
+    margin: 0;
+}
+
+.owl-carousel .owl-item .bgr_view{
+    position: relative;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.owl-carousel .owl-item .bgr_custom{
+    background-size: cover;
+}
+
+.owl-carousel .owl-item .item .item_img{
+    background-image: url("https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/banner2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center right;
+}
+
+.owl-carousel .owl-item .item .item_img2{
+    background-image: url("https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/banner3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center right;
+}
+
+.owl-carousel .owl-item .item .item_img .item_title .container .title h3,
+.owl-carousel .owl-item .item .item_img2 .item_title .container .title h3{
+    font-size: 70px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.owl-carousel .owl-item .item .item_img .item_title .container .title button,
+.owl-carousel .owl-item .item .item_img2 .item_title .container .title button{
+    font-size: 16px;
+    color: #000;
+    background: #fff;
+    font-weight: 600;
+    padding: 5px 0;
+    transition: all 0.5s;
+}
+
+.owl-carousel .owl-item .item .item_img .item_title .container .title button i,
+.owl-carousel .owl-item .item .item_img2 .item_title .container .title button i{
+    font-size: 15px;
+    color: #000;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.owl-carousel .owl-item .item .item_img .item_title .container .title button:hover,
+.owl-carousel .owl-item .item .item_img2 .item_title .container .title button:hover
+{
+    background: #ff6e65;
+    color: #fff;
+}
+
+.owl-carousel .owl-item .item .item_img .item_title .container .title button:hover i,
+.owl-carousel .owl-item .item .item_img2 .item_title .container .title button:hover i{
+    color: #fff;
+}
+
+.owl-carousel .owl-dots{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    right: 50px;
+    bottom: 150px;
+}
+
+.owl-carousel .owl-dots button span{
+    background: #fff;
+}
+
+.owl-carousel .owl-dots .active span{
+    background: #ff6e65!important;
+}
+
+.service .service_contents{
+    bottom: -220px;
+    z-index: 100;
+    left: 0;
+    right: 0;
+}
+
+.service{
+    height: 23vh;
+}
+
+.service .container .service_content{
+    color: #fff;
+    border-radius: 10px;
+}
+
+.service .container .service_content a{
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.service .container .service_content a:hover{
+    color: #000;
+}
+
+.service .container .service_content i{
+    font-size: 35px;
+}
+
+.service .container .bg{
+    background: #037ef3;
+}
+
+.service .container .bg2{
+    background: #ffc949;
+}
+
+.service .container .bg3{
+    background: #ff4f81;
+}
+
+.service .container .bg4{
+    background: #1ee697;
+}
+
+.welcome .container .welcome_title h2,
+.milestone .milestone_title h2,
+.feedback .feedback_title h2,
+.instructor .instructor_title h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: #060606;
+    position: relative;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.welcome .container .welcome_title h2::before,
+.milestone .milestone_title h2::before,
+.feedback .feedback_title h2::before,
+.instructor .instructor_title h2:after{
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: #707070;
+    position: absolute;
+    bottom: 0;
+    right: 48%;
+}
+
+.welcome .container .welcome_title h2::after,
+.milestone .milestone_title h2::after,
+.feedback .feedback_title h2::after,
+.instructor .instructor_title h2:before{
+    content: "";
+    width: 60px;
+    height: 1px;
+    background: #707070;
+    position: absolute;
+    bottom: -5px;
+    right: 46%;
+}
+
+.welcome .container .welcome_title h2 span,
+.milestone .milestone_title h2 span,
+.feedback .feedback_title h2 span,
+.instructor .instructor_title h2 span{
+    color: #ff6e65;
+}
+
+.welcome .container .row .item_img i,
+.catalog .catalog_service .catalog_content .item_img i{
+    background: #e9edf6;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 50%;
+    color: #0d369f;
+}
+
+.welcome .container .row .item_description a{
+    font-size: 24px;
+    font-weight: 600;
+    color: #060606;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.welcome .container .row .item_description a:hover{
+    color: #ff6e65;
+}
+
+.welcome .container .row .item_description p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #707070;
+}
+
+.catalog .catalog_service{
+    background-image: url("https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/bg3.jpg");
+}
+
+.catalog .bgr_custom{
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.catalog .catalog_service .catalog_content .row .item{
+    border-radius: 10px;
+}
+
+.catalog .catalog_service .catalog_content .row .item .item_content h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: #060606;
+}
+
+.catalog .catalog_service .catalog_content .row .item .item_content p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #707070;
+    line-height: 28px;
+    margin: 0;
+}
+
+.milestone .milestone_title .subtitle{
+    font-size: 16px;
+    color: #707070;
+    font-weight: 500;
+}
+
+.milestone .milestone_content h3{
+    font-size: 46px;
+    color: #060606;
+    font-weight: 600;
+}
+
+.milestone .milestone_content span{
+    font-size: 16px;
+    color: #060606;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.milestone .milestone_content .row .col-lg-3:first-child,
+.milestone .milestone_content .row .col-lg-3:nth-child(2),
+.milestone .milestone_content .row .col-lg-3:nth-child(3){
+    border-right: 1px solid #edebeb;
+}
+
+.feedback .container .feedback_content .item_content{
+    background: #fff;
+    box-shadow: 0px 20px 62px rgb(4 26 69 /10%);
+    border-radius: 5px;
+}
+
+.feedback .container .feedback_content .item_content .comment i{
+    color: #ff6e65;
+    font-size: 25px;
+}
+
+.feedback .container .feedback_content .item_content .comment p{
+    font-size: 16px;
+    color: #707070;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.feedback .container .feedback_content .item_content .comment_author img{
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.feedback .container .feedback_content .item_content .comment_author h4{
+    font-size: 20px;
+    color: #060606;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.feedback .container .feedback_content .item_content .comment_author p{
+    font-size: 13px;
+    color: #707070;
+    text-align: left;
+}
+
+.instructor .card .card-content a{
+    font-size: 20px;
+    font-weight: 600;
+    color: #060606;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.instructor .card .card-content a:hover{
+    color: #ff6e65;
+}
+
+.instructor .card .card-content p{
+    font-size: 12px;
+    color: #707070;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.contact_us .container h3{
+    font-size: 35px;
+    font-weight: 600;
+    color: #060606;
+}
+
+.contact_us .container p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #707070;
+}
+
+.contact_us .container button{
+    background: #ff6e65;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.contact_us .container button:hover{
+    background: #0d369f;
+    color: #fff;
+}
+
+@media ( min-width: 1280px)
+{
+    .container{
+        max-width: 1200px;
+    }
+}

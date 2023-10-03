@@ -55,7 +55,7 @@
 
   <body>
     <session class="header_area">
-      <session class="header_top w-100">
+      <session class="header_top">
         <session
           class="col-lg-12 header_top_contents v-100 d-flex justify-content-between align-items-center px-4 py-3"
         >
@@ -99,8 +99,8 @@
         </session>
       </session>
       <header>
-        <session class="nav_area col-12 d-block px-3 py-2">
-          <nav class="navbar navbar-expand-lg navbar-light">
+        <session class="nav_area col-12 d-block px-lg-3 px-sm-2 py-lg-2 py-sm-0">
+          <nav class="navbar navbar-expand-lg">
             <session class="container-fluid">
               <a class="navbar-brand" href="#">
                 <img
@@ -109,6 +109,20 @@
                 />
                 Studious
               </a>
+
+              <div>
+                <button
+                class="btn fs-3 change_theme"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                type="button"
+              >
+                <i class="fa-regular fa-moon"></i>
+              </button>
+
               <button
                 class="navbar-toggler"
                 type="button"
@@ -118,51 +132,53 @@
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span class="navbar-toggler-icon"></span>
+                <i class="fa-solid fa-bars"></i>
               </button>
-              <session
+              </div>
+              <div
                 class="navbar_items justify-content-end navbar-collapse"
                 id="navbarNavDropdown"
               >
-                <ul class="navbar-nav me-2">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="dropdown_btn nav-link dropdown-toggle"
-                      href="#"
-                      id="navbarDropdownMenuLink"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Pages
-                    </a>
-                    <ul
-                      class="dropdown-menu"
-                      aria-labelledby="navbarDropdownMenuLink"
-                    >
-                      <li><a class="dropdown-item" href="#">Blog Post</a></li>
-                      <li><a class="dropdown-item" href="#">404 Page</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Landing Page</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Elements Page</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                </ul>
-                <form class="search_area py-1 px-2 d-flex">
+              <ul class="navbar-nav ms-lg-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="dropdown_btn nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Pages
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li><a class="dropdown-item" href="#">Blog Post</a></li>
+                    <li><a class="dropdown-item" href="#">404 Page</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Landing Page</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Elements Page</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav text-sm-center">
+                <form class="search_area py-lg-1 px-lg-2 px-sm-3 d-flex">
                   <input
                     class="form-control"
                     type="search"
@@ -176,11 +192,12 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </button>
                 </form>
+              </ul>
 
                 <button class="btn mx-2 fs-3 change_theme" type="submit">
                   <i class="fa-regular fa-moon"></i>
                 </button>
-              </session>
+              </div>
             </session>
           </nav>
         </session>
@@ -188,14 +205,14 @@
     </session>
 
     <session class="banner">
-      <div id="owl-demo" class="owl-carousel owl-theme">
+      <div id="owl-demo" class="owl-carousel owl-theme position-relative">
         <div class="item">
           <div class="item_img bgr_custom bgr_view py-4 m-0">
             <div class="item_title">
               <div class="container">
-                <div class="title col-5">
-                  <h3 class="mb-2">Master the Skill to Drive your Career</h3>
-                  <button class="btn mt-4 px-4 py-2">
+                <div class="title col-lg-5">
+                  <h3 class="mb-2">Master the Skill to <br> Drive your Career</h3>
+                  <button class="btn mt-4 px-4 py-3">
                     Know more <i class="fa-solid fa-arrow-right"></i>
                   </button>
                 </div>
@@ -208,9 +225,9 @@
           <div class="item_img2 bgr_custom bgr_view m-0">
             <div class="item_title">
               <div class="container">
-                <div class="title col-6">
-                  <h3 class="mb-2">Studious is the best choice for everyone</h3>
-                  <button class="btn mt-4 px-4 py-2">
+                <div class="title col-lg-6">
+                  <h3 class="mb-2">Studious is the best <br> choice for everyone</h3>
+                  <button class="btn mt-4 px-4 py-3">
                     Know more <i class="fa-solid fa-arrow-right"></i>
                   </button>
                 </div>
@@ -222,43 +239,43 @@
     </session>
 
     <session class="service d-block w-100 pb-5">
-        <div class="service_contents col-lg-12 d-block position-absolute">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-3 w-25 px-2">
-                <div class="service_content bg p-5 text-center">
-                  <i class="fa fa-cogs mb-3" aria-hidden="true"></i>
-                  <a href="#" class="d-block">Engineering & Architecture</a>
-                </div>
+      <div class="service_contents col-lg-12 d-block position-absolute">
+        <div class="container d-sm-block">
+          <div class="row justify-content-center">
+            <div class="col-lg-3 col-sm-6 px-lg-2 px-sm-3 item">
+              <div class="service_content bg p-5 text-center">
+                <i class="fa fa-cogs mb-3" aria-hidden="true"></i>
+                <a href="#" class="d-block">Engineering & Architecture</a>
               </div>
+            </div>
 
-              <div class="col-lg-3 w-25 px-2 ">
-                <div class="service_content bg2 p-5 text-center">
-                  <i class="fa fa-book mb-3" aria-hidden="true"></i>
-                  <a href="#" class="d-block">Learning Management</a>
-                </div>
+            <div class="col-lg-3 col-sm-6 px-lg-2 px-sm-3 item">
+              <div class="service_content bg2 p-5 text-center">
+                <i class="fa fa-book mb-3" aria-hidden="true"></i>
+                <a href="#" class="d-block">Learning Management</a>
               </div>
+            </div>
 
-              <div class="col-lg-3 w-25 px-2 ">
-                <div class="service_content bg3 p-5 text-center">
-                  <i class="fa fa-coffee mb-3" aria-hidden="true"></i>
-                  <a href="#" class="d-block">Business & Management</a>
-                </div>
+            <div class="col-lg-3 col-sm-6 px-lg-2 px-sm-3 item">
+              <div class="service_content bg3 p-5 text-center">
+                <i class="fa fa-coffee mb-3" aria-hidden="true"></i>
+                <a href="#" class="d-block">Business & Management</a>
               </div>
+            </div>
 
-              <div class="col-lg-3 w-25 px-2 ">
-                <div class="service_content bg4 p-5 text-center">
-                  <i class="fa-solid fa-hourglass-half mb-3"></i>
-                  <a href="#" class="d-block">Artificial & Architecture</a>
-                </div>
+            <div class="col-lg-3 col-sm-6 px-lg-2 px-sm-3 item">
+              <div class="service_content bg4 p-5 text-center">
+                <i class="fa-solid fa-hourglass-half mb-3"></i>
+                <a href="#" class="d-block">Artificial & Architecture</a>
               </div>
             </div>
           </div>
         </div>
+      </div>
     </session>
 
     <session class="welcome">
-      <div class="col-lg-12 w-100 pt-5">
+      <div class="col-lg-12 w-100 pt-lg-5 top_space">
         <div class="container py-5 text-center">
           <div class="welcome_title mx-auto mb-5 py-4">
             <h2>Welcome to <span>Studious</span></h2>
@@ -270,7 +287,11 @@
               </div>
               <div class="item_description">
                 <a href="#" class="d-block mb-3">Trending Courses</a>
-                <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit sed do eiusmod te <br> incididunt</p>
+                <p class="mb-5">
+                  Lorem ipsum dolor sit amet consectetur 
+                  <br>adipisicing elit sed do eiusmod te 
+                  <br>incididunt
+                </p>
               </div>
             </div>
 
@@ -280,7 +301,11 @@
               </div>
               <div class="item_description">
                 <a href="#" class="d-block mb-3">Certified Teacher</a>
-                <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit sed do eiusmod te <br> incididunt</p>
+                <p class="mb-5">
+                  Lorem ipsum dolor sit amet consectetur 
+                  <br>adipisicing elit sed do eiusmod te 
+                  <br>incididunt
+                </p>
               </div>
             </div>
 
@@ -290,7 +315,11 @@
               </div>
               <div class="item_description">
                 <a href="#" class="d-block mb-3">Book & Library</a>
-                <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit sed do eiusmod te <br> incididunt</p>
+                <p class="mb-5">
+                  Lorem ipsum dolor sit amet consectetur 
+                  <br>adipisicing elit sed do eiusmod te 
+                  <br>incididunt
+                </p>
               </div>
             </div>
           </div>
@@ -305,50 +334,68 @@
             <div class="col-xl-4"></div>
             <div class="col-xl-8 catalog_content">
               <div class="row gap-0 align-items-center">
-                <div class="col-md-6 p-3 catalog_item ">
+                <div class="col-md-6 p-3 catalog_item">
                   <div class="item p-4 d-flex align-items-center bg-light">
                     <div class="item_img me-3">
                       <i class="fa fa-american-sign-language-interpreting"></i>
                     </div>
                     <div class="item_content">
                       <h4>Flexing Classes</h4>
-                      <p>Lorem ipsum dolor sit <br> amet, dolor elit.</p>
+                      <p>
+                        Lorem ipsum dolor sit
+                        amet, dolor elit.
+                      </p>
                     </div>
                   </div>
                 </div>
 
-                <div class="col-md-6 p-3 catalog_item ">
-                  <div class="item p-4 d-flex d-flex align-items-center bg-light">
+                <div class="col-md-6 p-3 catalog_item">
+                  <div
+                    class="item p-4 d-flex d-flex align-items-center bg-light"
+                  >
                     <div class="item_img me-3">
                       <i class="fa fa-download"></i>
                     </div>
                     <div class="item_content">
                       <h4>Offline Mode</h4>
-                      <p>Lorem ipsum dolor sit <br> amet, dolor elit.</p>
+                      <p>
+                        Lorem ipsum dolor sit
+                        amet, dolor elit.
+                      </p>
                     </div>
                   </div>
                 </div>
 
-                <div class="col-md-6 p-3 catalog_item ">
-                  <div class="item p-4 d-flex d-flex align-items-center bg-light">
+                <div class="col-md-6 p-3 catalog_item">
+                  <div
+                    class="item p-4 d-flex d-flex align-items-center bg-light"
+                  >
                     <div class="item_img me-3">
                       <i class="fa fa-headphones"></i>
                     </div>
                     <div class="item_content">
                       <h4>Educator Help</h4>
-                      <p>Lorem ipsum dolor sit <br> amet, dolor elit.</p>
+                      <p>
+                        Lorem ipsum dolor sit
+                        amet, dolor elit.
+                      </p>
                     </div>
                   </div>
                 </div>
-  
+
                 <div class="col-md-6 p-3 catalog_item">
-                  <div class="item p-4 d-flex d-flex align-items-center bg-light">
+                  <div
+                    class="item p-4 d-flex d-flex align-items-center bg-light"
+                  >
                     <div class="item_img me-3">
                       <i class="fa fa-play-circle"></i>
                     </div>
                     <div class="item_content">
                       <h4>Online Mode</h4>
-                      <p>Lorem ipsum dolor sit <br> amet, dolor elit.</p>
+                      <p>
+                        Lorem ipsum dolor sit
+                        amet, dolor elit.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -363,27 +410,31 @@
       <div class="container py-5 text-center">
         <div class="milestone_title mx-auto mb-5 pb-4">
           <h2>Streng in <span>Number</span></h2>
-          <p class="subtitle mt-4">Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et <br> dolorum fuga.</p>
+          <p class="subtitle mt-4">
+            Similique sunt in culpa qui officia deserunt mollitia animi, id est
+            laborum et <br />
+            dolorum fuga.
+          </p>
         </div>
         <div class="milestone_content">
           <div class="row">
-            <div class="col-lg-3 px-2">
-              <h3>6,300</h3>
+            <div class="col-lg-3 px-2 pb-4">
+              <h3 class="counter">6,300</h3>
               <span>Learner & counting</span>
             </div>
 
-            <div class="col-lg-3 px-2">
-              <h3>638</h3>
+            <div class="col-lg-3 px-2 pb-4">
+              <h3 class="counter">638</h3>
               <span>Total Courses</span>
             </div>
 
-            <div class="col-lg-3 px-2">
-              <h3>7,600</h3>
+            <div class="col-lg-3 px-2 pb-4">
+              <h3 class="counter">7,600</h3>
               <span>Successful students</span>
             </div>
 
             <div class="col-lg-3 px-2">
-              <h3>36</h3>
+              <h3 class="counter">36</h3>
               <span>Languages</span>
             </div>
           </div>
@@ -392,22 +443,29 @@
     </session>
 
     <session class="feedback">
-      <div class="col-lg-12 py-5">
+      <div class="col-lg-12 py-lg-5">
         <div class="container py-5 text-center">
-          <div class="feedback_title mx-auto mb-5 pb-4">
+          <div class="feedback_title mx-auto mb-lg-5 pb-4">
             <h2>Student Community <span>Feedback</span></h2>
           </div>
           <div class="feedback_content">
             <div class="row justify-content-center align-items-center">
-              <div class="col-lg-4 px-3">
+              <div class="col-lg-4 px-3 item">
                 <div class="item_content p-4">
                   <div class="comment text-start px-2 pt-2">
                     <i class="fa fa-quote-left"></i>
-                    <p> Nam libero tempore, cum soluta <br> nobis est eligendi optio cumque <br> nihil impedit.</p>
+                    <p>
+                      Nam libero tempore, cum soluta <br />
+                      nobis est eligendi optio cumque <br />
+                      nihil impedit.
+                    </p>
                   </div>
                   <div class="comment_author d-flex px-2 pt-2 pb-2">
                     <div class="author_img">
-                      <img src="https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/testi2.jpg" alt="">
+                      <img
+                        src="https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/testi2.jpg"
+                        alt=""
+                      />
                     </div>
                     <div class="author_info">
                       <h4>Petei cruis</h4>
@@ -416,16 +474,23 @@
                   </div>
                 </div>
               </div>
-  
-              <div class="col-lg-4 px-3">
+
+              <div class="col-lg-4 px-3 item">
                 <div class="item_content p-4">
                   <div class="comment text-start px-2 pt-2">
                     <i class="fa fa-quote-left"></i>
-                    <p> Nam libero tempore, cum soluta <br> nobis est eligendi optio cumque <br> nihil impedit.</p>
+                    <p>
+                      Nam libero tempore, cum soluta <br />
+                      nobis est eligendi optio cumque <br />
+                      nihil impedit.
+                    </p>
                   </div>
                   <div class="comment_author d-flex px-2 pt-2 pb-2">
                     <div class="author_img">
-                      <img src="https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/testi1.jpg" alt="">
+                      <img
+                        src="https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/testi1.jpg"
+                        alt=""
+                      />
                     </div>
                     <div class="author_info">
                       <h4>molif joe</h4>
@@ -434,19 +499,26 @@
                   </div>
                 </div>
               </div>
-  
-              <div class="col-lg-4 px-3">
+
+              <div class="col-lg-4 px-3 item">
                 <div class="item_content p-4">
                   <div class="comment text-start px-2 pt-2">
                     <i class="fa fa-quote-left"></i>
-                    <p> Nam libero tempore, cum soluta <br> nobis est eligendi optio cumque <br> nihil impedit.</p>
+                    <p>
+                      Nam libero tempore, cum soluta <br />
+                      nobis est eligendi optio cumque <br />
+                      nihil impedit.
+                    </p>
                   </div>
                   <div class="comment_author d-flex px-2 pt-2 pb-2">
                     <div class="author_img">
-                      <img src="https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/testi3.jpg" alt="">
+                      <img
+                        src="https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/testi3.jpg"
+                        alt=""
+                      />
                     </div>
                     <div class="author_info">
-                      <h4>paige turner </h4>
+                      <h4>paige turner</h4>
                       <p>Caption here</p>
                     </div>
                   </div>
@@ -460,15 +532,19 @@
 
     <session class="instructor">
       <div class="container">
-        <div class="instructor_title text-center mx-auto mb-5 pb-4">
+        <div class="instructor_title text-center mx-auto mb-lg-5 pb-4">
           <h2>World Class <span>Instructor</span></h2>
         </div>
         <div class="instructor_content">
           <div class="row justify-content-center align-items-center">
-            <div class="col-lg-3 px-2">
+            <div class="col-lg-3 col-sm-6 px-2 item">
               <div class="card">
                 <div class="card-img text-center pt-3">
-                  <img src="https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/team1.jpg" alt="" class="img-fluid">
+                  <img
+                    src="https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/team1.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
                 </div>
                 <div class="card-content text-center">
                   <a href="#" class="d-block mt-4 mb-2">olive yew</a>
@@ -476,10 +552,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 px-2">
-              <div class="card ">
+            <div class="col-lg-3 col-sm-6 px-2 item">
+              <div class="card">
                 <div class="card-img text-center pt-3">
-                  <img src="https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/team2.jpg" alt="" class="img-fluid">
+                  <img
+                    src="https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/team2.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
                 </div>
                 <div class="card-content text-center">
                   <a href="#" class="d-block mt-4 mb-2">aida joe</a>
@@ -487,10 +567,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 px-2">
-              <div class="card ">
+            <div class="col-lg-3 col-sm-6 px-2 item">
+              <div class="card">
                 <div class="card-img text-center pt-3">
-                  <img src="https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/team3.jpg" alt="" class="img-fluid">
+                  <img
+                    src="https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/team3.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
                 </div>
                 <div class="card-content text-center">
                   <a href="#" class="d-block mt-4 mb-2">tery dac</a>
@@ -498,10 +582,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 px-2">
-              <div class="card ">
+            <div class="col-lg-3 col-sm-6 px-2 item">
+              <div class="card">
                 <div class="card-img text-center pt-3">
-                  <img src="https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/team4.jpg" alt="" class="img-fluid">
+                  <img
+                    src="https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/team4.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
                 </div>
                 <div class="card-content text-center">
                   <a href="#" class="d-block mt-4 mb-2">anton yew</a>
@@ -518,13 +606,22 @@
       <div class="container py-5 mb-5">
         <div class="row justify-content-between align-items-center mb-5 pb-5">
           <div class="col-lg-5 text-center">
-            <img src="https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/image.png" alt="" class="img-fluid">
+            <img
+              src="https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/image.png"
+              alt=""
+              class="img-fluid"
+            />
           </div>
           <div class="col-lg-7 pe-5">
-            <h3 class="mb-3">Not Sure Where to Begin?
-              <br>Contact Now, We will Help you</h3>
-            <p>Consectetur adipiscing elit. Aliquam sit amet efficitur tortor.Uspendisse
-              <br> efficitur orci urna. In et augue ornare, tempor massa in, luctus sapien.</p>
+            <h3 class="mb-3">
+              Not Sure Where to Begin? <br />Contact Now, We will Help you
+            </h3>
+            <p>
+              Consectetur adipiscing elit. Aliquam sit amet efficitur
+              tortor.Uspendisse <br />
+              efficitur orci urna. In et augue ornare, tempor massa in, luctus
+              sapien.
+            </p>
             <button class="btn mt-4 px-4 py-3">Contact us</button>
           </div>
         </div>
@@ -536,14 +633,14 @@
         <div class="container px-3">
           <div class="footer_items">
             <div class="custom_form row align-items-center position-absolute">
-              <session class="left col-6 px-2">
+              <session class="left col-lg-6 px-2 pb-4">
                 <h4>
                   Subscribe Us to join our <br />
                   Community
                 </h4>
                 <span>Newsletter</span>
               </session>
-              <session class="right col-6 px-3">
+              <session class="right col-lg-6 px-3">
                 <form action="#" class="d-flex">
                   <input
                     class="form-control p-2"
@@ -554,8 +651,8 @@
                 </form>
               </session>
             </div>
-            <div class="row px-3">
-              <div class="item col-lg-2 px-4">
+            <div class="row px-lg-3">
+              <div class="item col-lg-2 px-lg-4">
                 <h6 class="mb-3">Archives</h6>
                 <ul>
                   <li>
@@ -566,7 +663,7 @@
                 </ul>
               </div>
 
-              <div class="item col-lg-3 ps-5 pe-2">
+              <div class="item col-lg-3 ps-lg-5 pe-lg-2">
                 <h6 class="mb-3">Categories</h6>
                 <ul>
                   <li>
@@ -595,7 +692,7 @@
                 </ul>
               </div>
 
-              <div class="item col-lg-3 ps-2 pe-3">
+              <div class="item col-lg-3 ps-lg-2 pe-lg-3">
                 <h6 class="mb-3">Contact</h6>
                 <ul>
                   <li>
@@ -617,7 +714,7 @@
                 </ul>
               </div>
 
-              <div class="item col-lg-4 ps-5 pe-2">
+              <div class="item col-lg-4 ps-lg-5 pe-lg-2">
                 <h6 class="mb-3">About</h6>
                 <ul>
                   <li>
@@ -630,7 +727,7 @@
                   </li>
                   <li class="mt-3">
                     <div
-                      class="social_list col-lg-7 justify-content-between align-items-center d-flex m-0"
+                      class="social_list col-lg-7 justify-content-between align-items-center d-flex m-lg-0"
                     >
                       <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                       <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -648,6 +745,7 @@
       <div class="copyright text-center">
         <p class="py-3 m-0">
           &copy;2023 Studious. All Rights Reserved | WordPress Theme by
+          <br>
           <span>W3layous.</span>
         </p>
       </div>
@@ -690,9 +788,19 @@
           itemsDesktopSmall: false,
           itemsTablet: false,
           itemsMobile: false,
-          loop:true,
+          loop: true,
         });
       });
+    </script>
+
+    <!-- count up js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/count-up/jquery.countup.min.js"></script>
+    <script>
+        $('.counter').countUp({
+            'time': 2000,
+            'delay': 10
+        });
     </script>
   </body>
 </html>

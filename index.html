@@ -89,16 +89,16 @@
               class="col-lg-6 d-flex justify-content-between align-items-center px-2"
             >
               <li>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/w3layouts"><i class="fa-brands fa-facebook-f"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://twitter.com/w3layouts"><i class="fa-brands fa-twitter"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/w3layouts/"><i class="fa-brands fa-instagram"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/w3layouts?_l=en_US"><i class="fa-brands fa-linkedin-in"></i></a>
               </li>
             </ul>
           </session>
@@ -107,7 +107,7 @@
     </session>
 
     <header>
-      <session class="nav_area col-lg-12 d-block px-lg-3 py-sm-0">
+      <session class="nav_area col-lg-12 d-block px-lg-3 py-lg-1 py-sm-0">
         <nav class="navbar navbar-expand-lg">
           <session class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -146,11 +146,11 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
+                  <a class="nav-link about-us" href="#">About Us</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a
-                    class="dropdown_btn nav-link dropdown-toggle"
+                    class="dropdown_btn nav-link dropdown-toggle pages"
                     href="#"
                     id="navbarDropdownMenuLink"
                     role="button"
@@ -174,28 +174,29 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link itemss" href="#">Contact</a>
                 </li>
               </ul>
               <ul class="navbar-nav text-center">
-                <form class="search_area py-lg-1 px-lg-2 px-sm-3 d-flex">
+                <form class="search_area py-lg-2 px-lg-2 px-sm-3 d-flex">
                   <input
-                    class="form-control"
+                    class="form-control search_form"
                     type="search"
                     placeholder="Enter Keyword"
                     aria-label="Search"
                   />
-                  <button
-                    class="btn bg-transparent text-decoration-none border-0"
-                    type="submit"
+                  <a
+                    class="search-btn bg-transparent text-decoration-none border-0"
+                    href="./html/search.html"
                   >
                     <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
+                </a>
                 </form>
               </ul>
 
               <button class="btn mx-2 fs-3 change_theme" type="submit">
-                <i class="fa-regular fa-moon"></i>
+                <i class="fa-regular fa-moon " id="moon"></i>
+                <i class="fa-regular fa-sun " id="sun"></i>
               </button>
             </div>
           </session>
@@ -211,19 +212,19 @@
           </button>
         </li>
         <li class="mt-3">
-          <a href="#">
+          <a href="https://w3layouts.com/template/studious-wordpress-theme/">
             <i class="fa-solid fa-left-long"></i>
             <p>Back</p>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="https://w3layouts.com/template/studious-wordpress-theme/">
             <i class="fa-solid fa-download"></i>
             <p>Download</p>
           </a>
         </li>
         <li class="mb-3">
-          <a href="#">
+          <a href="https://w3layouts.com/checkout/?add-to-cart=4763800000038426">
             <i class="fa-solid fa-cart-shopping"></i>
             <p>Buy</p>
           </a>
@@ -311,7 +312,7 @@
       <div class="col-lg-12 w-100 pt-lg-5 top_space">
         <div class="container py-md-5 py-4 text-center">
           <div class="welcome_title mx-auto mb-5 py-4">
-            <h2>Welcome to <span>Studious</span></h2>
+            <h2 class="welcome_txt">Welcome to <span>Studious</span></h2>
           </div>
           <div class="row text-center justify-content-center">
             <div class="col-lg-4 col-sm-6 px-3">
@@ -319,8 +320,8 @@
                 <i class="fa fa-graduation-cap mb-4"></i>
               </div>
               <div class="item_description">
-                <a href="#" class="d-block mb-3">Trending Courses</a>
-                <p class="mb-5">
+                <a href="#" class="d-block mb-3 trending">Trending Courses</a>
+                <p class="mb-5 description">
                   Lorem ipsum dolor sit amet consectetur
                   <br />adipisicing elit sed do eiusmod te <br />incididunt
                 </p>
@@ -332,8 +333,8 @@
                 <i class="fa fa-users mb-4"></i>
               </div>
               <div class="item_description">
-                <a href="#" class="d-block mb-3">Certified Teacher</a>
-                <p class="mb-5">
+                <a href="#" class="d-block mb-3 certified">Certified Teacher</a>
+                <p class="mb-5 description">
                   Lorem ipsum dolor sit amet consectetur
                   <br />adipisicing elit sed do eiusmod te <br />incididunt
                 </p>
@@ -345,8 +346,8 @@
                 <i class="fa fa-book mb-4"></i>
               </div>
               <div class="item_description">
-                <a href="#" class="d-block mb-3">Book & Library</a>
-                <p class="mb-5">
+                <a href="#" class="d-block mb-3 books">Book & Library</a>
+                <p class="mb-5 description">
                   Lorem ipsum dolor sit amet consectetur
                   <br />adipisicing elit sed do eiusmod te <br />incididunt
                 </p>
@@ -365,55 +366,49 @@
             <div class="col-xl-8 catalog_content">
               <div class="row gap-0 align-items-center">
                 <div class="col-md-6 p-3 catalog_item">
-                  <div class="item p-4 d-flex align-items-center bg-light">
+                  <div class="item p-4 d-flex align-items-center catalog-night-mode">
                     <div class="item_img me-3">
-                      <i class="fa fa-american-sign-language-interpreting"></i>
+                      <i class="fa fa-american-sign-language-interpreting bgr-night-mode"></i>
                     </div>
                     <div class="item_content">
-                      <h4>Flexing Classes</h4>
-                      <p>Lorem ipsum dolor sit amet, dolor elit.</p>
+                      <h4 class="item_content_title">Flexing Classes</h4>
+                      <p class="item_content_description">Lorem ipsum dolor sit amet, dolor <br> elit.</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-6 p-3 catalog_item">
-                  <div
-                    class="item p-4 d-flex d-flex align-items-center bg-light"
-                  >
+                  <div class="item p-4 d-flex d-flex align-items-center catalog-night-mode">
                     <div class="item_img me-3">
-                      <i class="fa fa-download"></i>
+                      <i class="fa fa-download bgr-night-mode"></i>
                     </div>
                     <div class="item_content">
-                      <h4>Offline Mode</h4>
-                      <p>Lorem ipsum dolor sit amet, dolor elit.</p>
+                      <h4 class="item_content_title">Offline Mode</h4>
+                      <p class="item_content_description">Lorem ipsum dolor sit amet, dolor <br> elit.</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-6 p-3 catalog_item">
-                  <div
-                    class="item p-4 d-flex d-flex align-items-center bg-light"
-                  >
+                  <div class="item p-4 d-flex d-flex align-items-center catalog-night-mode">
                     <div class="item_img me-3">
-                      <i class="fa fa-headphones"></i>
+                      <i class="fa fa-headphones bgr-night-mode"></i>
                     </div>
                     <div class="item_content">
-                      <h4>Educator Help</h4>
-                      <p>Lorem ipsum dolor sit amet, dolor elit.</p>
+                      <h4 class="item_content_title">Educator Help</h4>
+                      <p class="item_content_description">Lorem ipsum dolor sit amet, dolor elit.</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-6 p-3 catalog_item">
-                  <div
-                    class="item p-4 d-flex d-flex align-items-center bg-light"
-                  >
+                  <div class="item p-4 d-flex d-flex align-items-center catalog-night-mode">
                     <div class="item_img me-3">
-                      <i class="fa fa-play-circle"></i>
+                      <i class="fa fa-play-circle bgr-night-mode"></i>
                     </div>
                     <div class="item_content">
-                      <h4>Online Mode</h4>
-                      <p>Lorem ipsum dolor sit amet, dolor elit.</p>
+                      <h4 class="item_content_title">Online Mode</h4>
+                      <p class="item_content_description">Lorem ipsum dolor sit amet, dolor elit.</p>
                     </div>
                   </div>
                 </div>
@@ -426,8 +421,8 @@
 
     <session class="milestone py-5">
       <div class="container py-5 text-center">
-        <div class="milestone_title mx-auto mt-sm-4 mb-5 pb-4">
-          <h2>Streng in <span>Number</span></h2>
+        <div class="milestone_title mx-auto mt-lg-5 mt-sm-4 mb-5 pb-4">
+          <h2 class="milestone_title_txt">Strength in <span>Number</span></h2>
           <p class="subtitle mt-4">
             Similique sunt in culpa qui officia deserunt mollitia animi, id est
             laborum et <br />
@@ -438,22 +433,22 @@
           <div class="row">
             <div class="col-lg-3 col-sm-6 px-2 pb-4">
               <h3 class="counter">6,300</h3>
-              <span>Learner & counting</span>
+              <span class="sub_counter">Learner & counting</span>
             </div>
 
             <div class="col-lg-3 col-sm-6 px-2 pb-4">
               <h3 class="counter">638</h3>
-              <span>Total Courses</span>
+              <span class="sub_counter">Total Courses</span>
             </div>
 
             <div class="col-lg-3 col-sm-6 px-2 pb-4">
               <h3 class="counter">7,600</h3>
-              <span>Successful students</span>
+              <span class="sub_counter">Successful students</span>
             </div>
 
             <div class="col-lg-3 col-sm-6 px-2">
               <h3 class="counter">36</h3>
-              <span>Languages</span>
+              <span class="sub_counter">Languages</span>
             </div>
           </div>
         </div>
@@ -464,18 +459,18 @@
       <div class="col-lg-12 py-lg-5">
         <div class="container py-5 text-center">
           <div class="feedback_title mx-auto mb-lg-5 pb-4">
-            <h2>Student Community <span>Feedback</span></h2>
+            <h2 class="feedback_title_txt">Student Community <span>Feedback</span></h2>
           </div>
           <div class="feedback_content">
             <div class="row justify-content-center align-items-center">
               <div class="col-lg-4 col-md-6 px-3 item">
-                <div class="item_content p-4">
+                <div class="item_content feedback-night-mode p-4">
                   <div class="comment text-start px-2 pt-2">
                     <i class="fa fa-quote-left"></i>
-                    <p>
+                    <p class="comment_txt">
                       Nam libero tempore, cum soluta <br />
                       nobis est eligendi optio cumque <br />
-                      nihil impedit.
+                      nihil <br class="br2"> impedit.
                     </p>
                   </div>
                   <div class="comment_author d-flex px-2 pt-2 pb-2">
@@ -486,21 +481,21 @@
                       />
                     </div>
                     <div class="author_info">
-                      <h4>Petei cruis</h4>
-                      <p>Caption here</p>
+                      <h4 class="author-name">Petei cruis</h4>
+                      <p class="author_sub">Caption here</p>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div class="col-lg-4 col-md-6 px-3 item">
-                <div class="item_content p-4">
+                <div class="item_content feedback-night-mode p-4">
                   <div class="comment text-start px-2 pt-2">
                     <i class="fa fa-quote-left"></i>
-                    <p>
+                    <p class="comment_txt">
                       Nam libero tempore, cum soluta <br />
                       nobis est eligendi optio cumque <br />
-                      nihil impedit.
+                      nihil <br class="br2"> impedit.
                     </p>
                   </div>
                   <div class="comment_author d-flex px-2 pt-2 pb-2">
@@ -511,21 +506,21 @@
                       />
                     </div>
                     <div class="author_info">
-                      <h4>molif joe</h4>
-                      <p>Caption here</p>
+                      <h4 class="author-name">molif joe</h4>
+                      <p class="author_sub">Caption here</p>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div class="col-lg-4 col-md-6 px-3 item">
-                <div class="item_content p-4">
+                <div class="item_content feedback-night-mode p-4">
                   <div class="comment text-start px-2 pt-2">
                     <i class="fa fa-quote-left"></i>
-                    <p>
+                    <p class="comment_txt">
                       Nam libero tempore, cum soluta <br />
                       nobis est eligendi optio cumque <br />
-                      nihil impedit.
+                      nihil <br class="br2"> impedit.
                     </p>
                   </div>
                   <div class="comment_author d-flex px-2 pt-2 pb-2">
@@ -536,8 +531,8 @@
                       />
                     </div>
                     <div class="author_info">
-                      <h4>paige turner</h4>
-                      <p>Caption here</p>
+                      <h4 class="author-name">paige turner</h4>
+                      <p class="author_sub">Caption here</p>
                     </div>
                   </div>
                 </div>
@@ -551,12 +546,12 @@
     <session class="instructor">
       <div class="container">
         <div class="instructor_title text-center mx-auto mb-lg-5 pb-4">
-          <h2>World Class <span>Instructor</span></h2>
+          <h2 class="instructor_title_txt">World Class <span>Instructor</span></h2>
         </div>
         <div class="instructor_content">
           <div class="row justify-content-center align-items-center">
             <div class="col-lg-3 col-sm-6 px-lg-2 item">
-              <div class="card">
+              <div class="card instructor_card">
                 <div class="card-img text-lg-center pt-lg-3">
                   <img
                     src="https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/team1.jpg"
@@ -564,21 +559,21 @@
                     class="img-fluid"
                   />
                   <div
-                    class="overlay text-center mx-3 py-lg-3 position-absolute"
+                    class="overlay text-center py-lg-3 position-absolute"
                   >
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-google-plus-g"></i>
+                  <a href="https://www.facebook.com/w3layouts"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/w3layouts"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://w3layouts.com/tag/email-templates/"><i class="fa-brands fa-google-plus-g"></i></a>
                   </div>
                 </div>
                 <div class="card-content text-center">
-                  <a href="#" class="d-block mt-4 mb-2">olive yew</a>
-                  <p class="mb-4">teaches design</p>
+                  <a href="#" class="d-block mt-4 mb-2 instructor_name">olive yew</a>
+                  <p class="mb-4 instructor_work">teaches design</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-sm-6 px-lg-2 item">
-              <div class="card">
+              <div class="card instructor_card">
                 <div class="card-img text-center pt-lg-3">
                   <img
                     src="https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/team2.jpg"
@@ -586,21 +581,21 @@
                     class="img-fluid"
                   />
                   <div
-                    class="overlay text-center mx-3 py-lg-3 position-absolute"
+                    class="overlay text-center py-lg-3 position-absolute"
                   >
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-google-plus-g"></i>
+                    <a href="https://www.facebook.com/w3layouts"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/w3layouts"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://w3layouts.com/tag/email-templates/"><i class="fa-brands fa-google-plus-g"></i></a>
                   </div>
                 </div>
                 <div class="card-content text-center">
-                  <a href="#" class="d-block mt-4 mb-2">aida joe</a>
-                  <p class="mb-4">UI/UX Designer</p>
+                  <a href="#" class="d-block mt-4 mb-2 instructor_name">aida joe</a>
+                  <p class="mb-4 instructor_work">UI/UX Designer</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-sm-6 px-lg-2 item">
-              <div class="card">
+              <div class="card instructor_card">
                 <div class="card-img text-center pt-lg-3">
                   <img
                     src="https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/team3.jpg"
@@ -608,21 +603,21 @@
                     class="img-fluid"
                   />
                   <div
-                    class="overlay text-center mx-3 py-lg-3 position-absolute"
+                    class="overlay text-center py-lg-3 position-absolute"
                   >
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-google-plus-g"></i>
+                  <a href="https://www.facebook.com/w3layouts"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/w3layouts"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://w3layouts.com/tag/email-templates/"><i class="fa-brands fa-google-plus-g"></i></a>
                   </div>
                 </div>
                 <div class="card-content text-center">
-                  <a href="#" class="d-block mt-4 mb-2">tery dac</a>
-                  <p class="mb-4">Teaches Skill</p>
+                  <a href="#" class="d-block mt-4 mb-2 instructor_name">tery dac</a>
+                  <p class="mb-4 instructor_work">Teaches Skill</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-sm-6 px-lg-2 item">
-              <div class="card">
+              <div class="card instructor_card">
                 <div class="card-img text-center pt-lg-3">
                   <img
                     src="https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/team4.jpg"
@@ -630,16 +625,16 @@
                     class="img-fluid"
                   />
                   <div
-                    class="overlay text-center mx-3 py-lg-3 position-absolute"
+                    class="overlay text-center  py-lg-3 position-absolute"
                   >
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-google-plus-g"></i>
+                  <a href="https://www.facebook.com/w3layouts"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/w3layouts"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://w3layouts.com/tag/email-templates/"><i class="fa-brands fa-google-plus-g"></i></a>
                   </div>
                 </div>
                 <div class="card-content text-center">
-                  <a href="#" class="d-block mt-4 mb-2">anton yew</a>
-                  <p class="mb-4">web designer</p>
+                  <a href="#" class="d-block mt-4 mb-2 instructor_name">anton yew</a>
+                  <p class="mb-4 instructor_work">web designer</p>
                 </div>
               </div>
             </div>
@@ -659,10 +654,10 @@
             />
           </div>
           <div class="col-lg-7 pe-5">
-            <h3 class="mb-3">
+            <h3 class="mb-3 contact_us_title">
               Not Sure Where to Begin? <br />Contact Now, We will Help you
             </h3>
-            <p>
+            <p class="contact_us_description">
               Consectetur adipiscing elit. Aliquam sit amet efficitur
               tortor.Uspendisse <br />
               efficitur orci urna. In et augue ornare, tempor massa in, luctus
@@ -680,20 +675,20 @@
           <div class="footer_items">
             <div class="custom_form row align-items-center position-absolute">
               <session class="left col-md-6 px-lg-2 pb-lg-4">
-                <h4>
+                <h4 class="left_txt">
                   Subscribe Us to join our <br />
                   Community
                 </h4>
-                <span>Newsletter</span>
+                <span class="left_sub">Newsletter</span>
               </session>
               <session class="right col-md-6 px-lg-3 mt-md-0 mt-4">
                 <form action="#" class="d-flex">
                   <input
-                    class="form-control p-2"
+                    class="form-control p-2 input_night_mode"
                     type="email"
                     placeholder="Enter your email"
                   />
-                  <button class="btn px-4 py-3">Send</button>
+                  <button class="btn px-4 py-3 send">Send</button>
                 </form>
               </session>
             </div>
@@ -853,5 +848,7 @@
         delay: 10,
       });
     </script>
+
+    <script src="./js/home.js"></script>
   </body>
 </html>

@@ -1,0 +1,82 @@
+.bp_card .card {
+    border: none;
+}
+
+.card_date {
+    margin-bottom: 20px;
+}
+
+.card-body  .date_2 {
+    list-style: none;
+}
+.card-body  .date_2 i {
+    font-size: 13px;
+    color: #ff6e65;
+    margin-right: 5px;
+    font-weight: 500;
+}
+.card-body  .date_l a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #ff6e65;
+}
+
+.card .card-body h5 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.card .card-body h5:hover {
+    color: #ff6e65;
+}
+
+
+
+
+.bp_card .card .card-body p a{
+    text-decoration: none;
+    color: #0d369f;
+}
+.bp_w3layouts {
+    border: 1px solid #eee ;
+    border-radius: 10px;
+}
+
+.social_iconw3 {
+    /* margin-left: 0 10px; */
+    font-size: 20px;
+}
+.social_iconw3 i {
+    margin-left: 10px;
+    color: black;
+    transition: 0.5s;
+}
+.social_iconw3 i:hover {
+    color: #ff6e65;
+}
+
+.previous_post {
+    margin: 50px 0;
+    padding: 10px;
+    border: 1px solid #eee; 
+    border-left: none; 
+    border-right: none;
+}
+
+.previous_post a {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    transition: 0.5s;
+}
+
+.previous_post span {
+    font-size: 16px;
+    font-weight: 700px;
+}
+.previous_post a:hover{
+    color: #ff6e65;
+}

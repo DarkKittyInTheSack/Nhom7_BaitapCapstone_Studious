@@ -9,16 +9,16 @@
     box-shadow: none !important;
 }
 
-#sun{
-    display: none;
+.fixed-top{
+    position: sticky;
 }
 
 #moon{
     display: block;
 }
 
-.fixed-top{
-    position: sticky;
+#sun{
+    display: none;
 }
 
 .header_area .header_top .header_top_contents{
@@ -41,6 +41,12 @@
     text-decoration: none;
     font-weight: 600;
     color: #ffffff;
+    transition: all 0.5s;
+}
+
+.header_area .header_top .contact ul li a:hover,
+.header_area .header_top .social_media ul li a:hover{
+    color: #ff6e65;
 }
 
 .header_area .header_top .contact ul li a i{
@@ -62,7 +68,8 @@ header{
     left: 0;
     right: 0;
     background: #fff;
-    z-index: 200;
+    z-index: 2000;
+    transition: all 0.5s;
 }
 
 header .nav_area nav .container-fluid a{
@@ -71,6 +78,11 @@ header .nav_area nav .container-fluid a{
     text-decoration: none;
     vertical-align: middle;
     color: #0d369f;
+    transition: all 0.5s;
+}
+
+header .nav_area nav .container-fluid a:hover{
+    color: #ff6e65 !important;
 }
 
 header .nav_area nav .container-fluid .navbar_items ul li a{
@@ -109,21 +121,74 @@ header .nav_area nav .container-fluid .navbar_items form input{
     border-radius: 20px;
 }
 
-header .nav_area nav .container-fluid .navbar_items form button{
+header .nav_area nav .container-fluid .navbar_items form .search-btn{
     color: #0d369f;
     font-weight: 600;
+    width: 30px;
+    height: 30px;
     position: absolute;
-    right: 0;
+    right: 10px;
     top: 1px;
     transition: all 0.5s;
 }
 
-header .nav_area nav .container-fluid .navbar_items .change_theme{
-    transform: rotate(-45deg);
+header .nav_area nav .container-fluid .navbar_items form .search-btn i{
+    font-size: 20px;
+}
+
+header .nav_area nav .container-fluid .navbar_items .change_themes{
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+
+header .nav_area nav .container-fluid .navbar_items .change_themes input{
+    display: none;
+}
+
+header .nav_area nav .container-fluid .navbar_items .change_themes .themes{
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    padding: 0;
     color: #0d369f;
-    font-weight: 600;
+}
+
+.themes i.fa-sun{
+    display: none;
+}
+
+.themes i.fa-moon{
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
     transition: all 0.5s;
 }
+
+.fa-moon:hover{
+    color: #ff6e65;
+}
+
+.fa-moon::after, .fa-sun::after{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 18px;
+    top: 8px;
+    left: 2px;
+}
+
+input:checked +.themes .fa-sun{
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+    transition: all 0.5s;
+}
+
+input:checked +.themes .fa-moon{
+    display: none;
+}
+
 
 header .responsive_change_theme{
     display: none;
@@ -247,18 +312,24 @@ header .responsive_change_theme{
 }
 
 .footer_area .footer_content .container .footer_items .row .item ul li .social_list a{
-    color: #ffffff;
+    color: #fff;
     width: 35px;
     height: 35px;
     text-align: center;
     border-radius: 100px;
     background: #ffffff0f;
+    
 }
 
 .footer_area .footer_content .container .footer_items .row .item ul li .social_list a i{
     font-size: 15px;
     line-height: 35px;
     margin: 0;
+    transition: all 0.5s;
+}
+
+.footer_area .footer_content .container .footer_items .row .item ul li .social_list a:hover i{
+    color: #a0a0a0;
 }
 
 .footer_area .copyright{
@@ -268,6 +339,10 @@ header .responsive_change_theme{
 .footer_area .copyright p{
     font-size: 15px;
     color: #a0a0a0;
+}
+
+.footer_area .copyright p br{
+    display: none;
 }
 
 .footer_area .copyright p span{
@@ -374,7 +449,7 @@ header .responsive_change_theme{
 }
 
 .search_content .container .contents .side_menu .item button:hover{
-    background: #ff6e65;
+    background: #ff6e65 !important;
 }
 
 .search_content .container .contents .side_menu .item h2{
@@ -403,7 +478,7 @@ header .responsive_change_theme{
 
 .search_content .container .contents .side_menu .item ul li:hover a{
     text-decoration: underline;
-    color: #ff6e65;
+    color: #ff6e65 !important;
 }
 .search_content .container .contents .side_menu .item:nth-child(3) ul li:hover a{
     text-decoration: none;
@@ -411,7 +486,7 @@ header .responsive_change_theme{
 }
 
 .search_content .container .contents .side_menu .item:nth-child(3) ul li a span:hover{
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
 .back_to_top{

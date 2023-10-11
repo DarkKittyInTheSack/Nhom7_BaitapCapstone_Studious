@@ -27,8 +27,12 @@ function navbarLightMode() {
     .querySelector(".navbar-brand")
     .classList.remove("navbar-brand-night-mode");
 
+    document
+    .querySelector(".navbar-brand").style.color = "#0d369f";
+
   document.querySelector(".about-us").style.color = "#060606"
   document.querySelector(".pages").style.color = "#060606"
+  document.querySelector(".pages").style.backgroundColor = "#fff"
   document.querySelector(".itemss").style.color = "#060606"
 
   document.querySelector(".active").style.color = "#ff6e65";
@@ -155,30 +159,47 @@ function footerNightMode(color1,color2,color3,color4,color5){
 
 }
 
-var change_theme_btn = (document.querySelector(".change_theme").onclick =
-  function () {
 
+
+
+document.querySelector(".change_themes").addEventListener("click", function(){
+  
+  var checkBox = document.getElementById("switch_theme")
+
+  if(checkBox.checked == true){
     document.body.style.background = "#181F31";
-      navbarNightMode();
-      welcomeNightMode("#fff","#b7b7b7");
-      catalogNightMode("#161c2d", "#102045", "#4867b0","#fff", "#b7b7b7");
-      milestoneNightMode("#fff", "#b7b7b7");
-      feedbackNightMode("#fff", "#161c2d", "#b7b7b7");
-      instructorNightMode("#fff", "#161c2d", "#b7b7b7");
-      contactUsNightMode("#fff", "#b7b7b7");
-      footerNightMode("#161c2d", "#fff", "#b7b7b7", "transparent","#4867b0" );
-
-    // var moon = document.getElementById('moon')
-    // var sun = document.getElementById('sun')
-    // if(moon.style.display === "block"){
-      
-
-    //   moon.style.display = "none"
-    //   sun.style.display = "block"
-      
-    // }
-
+    navbarNightMode();
+    welcomeNightMode("#fff","#b7b7b7");
+    catalogNightMode("#161c2d", "#102045", "#4867b0","#fff", "#b7b7b7");
+    milestoneNightMode("#fff", "#b7b7b7");
+    feedbackNightMode("#fff", "#161c2d", "#b7b7b7");
+    instructorNightMode("#fff", "#161c2d", "#b7b7b7");
+    contactUsNightMode("#fff", "#b7b7b7");
+    footerNightMode("#161c2d", "#fff", "#b7b7b7", "transparent","#4867b0" );
+  }else{
+    document.body.style.background = "#fff";
+    navbarLightMode();
+    welcomeNightMode("#060606","#707070");
+    catalogNightMode("#fff","#e9edf6","#0d369f","#060606", "#707070")
+    milestoneNightMode("#060606","#707070")
+    feedbackNightMode("#060606","#fff","#707070")
+    instructorNightMode("#060606", "#fff", "#707070")
+    contactUsNightMode("#060606","#707070")
+    footerNightMode("#fff","#060606","#707070","#fff","#0d369f")
+  }
     
 
-  });
+})
+
+document.querySelector(".responsive_change_theme").addEventListener("click", function(){
+  document.body.style.background = "#181F31";
+  navbarNightMode();
+  welcomeNightMode("#fff","#b7b7b7");
+  catalogNightMode("#161c2d", "#102045", "#4867b0","#fff", "#b7b7b7");
+  milestoneNightMode("#fff", "#b7b7b7");
+  feedbackNightMode("#fff", "#161c2d", "#b7b7b7");
+  instructorNightMode("#fff", "#161c2d", "#b7b7b7");
+  contactUsNightMode("#fff", "#b7b7b7");
+  footerNightMode("#161c2d", "#fff", "#b7b7b7", "transparent","#4867b0" );
+})
 

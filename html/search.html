@@ -41,7 +41,7 @@
     <session class="header_area">
       <session class="header_top">
         <session
-          class="col-lg-12 header_top_contents v-100 d-flex justify-content-between align-items-center px-4 py-3"
+          class="col-lg-12 header_top_contents w-100 d-flex justify-content-between align-items-center px-4 py-3"
         >
           <session class="contact col-lg-9">
             <ul
@@ -67,147 +67,120 @@
               class="col-lg-6 d-flex justify-content-between align-items-center px-2"
             >
               <li>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/w3layouts"><i class="fa-brands fa-facebook-f"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://twitter.com/w3layouts"><i class="fa-brands fa-twitter"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/w3layouts/"><i class="fa-brands fa-instagram"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/w3layouts?_l=en_US"><i class="fa-brands fa-linkedin-in"></i></a>
               </li>
             </ul>
           </session>
         </session>
       </session>
+    </session>
 
-      <header>
-        <session class="nav_area col-lg-12 col-sm-6 d-block px-lg-3 px-sm-2 py-lg-2 py-sm-0">
-          <nav class="navbar navbar-expand-lg">
-            <session class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img
-                  src="https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/logo.png"
-                  alt=""
-                />
-                Studious
-              </a>
-  
-              <div>
-                <button class="btn fs-3 responsive_change_theme" type="button">
-                  <i class="fa-regular fa-moon"></i>
-                </button>
-  
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarNavDropdown"
-                  aria-controls="navbarNavDropdown"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <i class="fa-solid fa-bars"></i>
-                </button>
-              </div>
-              <div
-                class="navbar_items justify-content-end navbar-collapse"
-                id="navbarNavDropdown"
+    <header class="header">
+      <session class="nav_area col-lg-12 d-block px-lg-3 py-lg-1 py-sm-0" id="nav_area">
+        <nav class="navbar navbar-expand-lg">
+          <session class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/logo.png"
+                alt=""
+              />
+              Studious
+            </a>
+
+            <div>
+              <button class="btn fs-3 responsive_change_theme change_theme" type="button">
+                <i class="fa-regular fa-moon"></i>
+              </button>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
               >
-                <ul class="navbar-nav ms-lg-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="dropdown_btn nav-link dropdown-toggle"
-                      href="#"
-                      id="navbarDropdownMenuLink"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Pages
-                    </a>
-                    <ul
-                      class="dropdown-menu"
-                      aria-labelledby="navbarDropdownMenuLink"
-                    >
-                      <li><a class="dropdown-item" href="#">Blog Post</a></li>
-                      <li><a class="dropdown-item" href="#">404 Page</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Landing Page</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Elements Page</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                </ul>
-                <ul class="navbar-nav text-sm-center">
-                  <form class="search_area py-lg-1 px-lg-2 px-sm-3 d-flex">
-                    <input
-                      class="form-control"
-                      type="search"
-                      placeholder="Enter Keyword"
-                      aria-label="Search"
-                    />
-                    <button
-                      class="btn bg-transparent text-decoration-none border-0"
-                      type="submit"
-                    >
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                  </form>
-                </ul>
-  
-                <button class="btn mx-2 fs-3 change_theme" type="submit">
-                  <i class="fa-regular fa-moon"></i>
-                </button>
-              </div>
-            </session>
-          </nav>
-        </session>
-      </header>
-    </session>
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+            <div
+              class="navbar_items justify-content-end navbar-collapse"
+              id="navbarNavDropdown"
+            >
+              <ul class="navbar-nav ms-lg-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link about-us" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="dropdown_btn nav-link dropdown-toggle pages"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Pages
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li><a class="dropdown-item" href="#">Blog Post</a></li>
+                    <li><a class="dropdown-item" href="#">404 Page</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Landing Page</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Elements Page</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link itemss" href="#">Contact</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav text-center">
+                <form class="search_area py-lg-2 px-lg-2 px-sm-3 d-flex">
+                  <input
+                    class="form-control search_form"
+                    type="search"
+                    placeholder="Enter Keyword"
+                    aria-label="Search"
+                  />
+                  <a
+                    class="search-btn bg-transparent text-decoration-none border-0"
+                    href="./html/search.html"
+                  >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                </form>
+              </ul>
 
-    <session class="side_bar d-inline-block">
-      <ul class="p-lg-2 text-center">
-        <li >
-          <button class="btn bg-transparent w-100">
-            <i class="fa-solid fa-angles-right"></i>
-          </button>
-        </li>
-        <li class="mt-3">
-          <a href="#">
-            <i class="fa-solid fa-left-long"></i>
-            <p>Back</p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa-solid fa-download"></i>
-            <p>Download</p>
-          </a>
-        </li>
-        <li class="mb-3">
-          <a href="#">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <p>Buy</p>
-          </a>
-        </li>
-      </ul>
-    </session>
+              <button class="btn mx-2 fs-3 change_theme" type="submit">
+                <i class="fa-regular fa-moon " id="moon"></i>
+                <i class="fa-regular fa-sun " id="sun"></i>
+              </button>
+            </div>
+          </session>
+        </nav>
+      </session>
+    </header>
 
     <session class="top_banner d-block">
       <div class="inner_text d-block m-lg-auto bg-transparent">
@@ -328,31 +301,31 @@
       </div>
     </session>
 
-    <footer class="footer_area mt-5 pt-5 position-relative">
+    <footer class="footer_area  w-100 mt-5 pt-5 position-relative">
       <div class="footer_content">
-        <div class="container px-3">
+        <div class="container px-lg-3">
           <div class="footer_items">
             <div class="custom_form row align-items-center position-absolute">
-              <session class="left col-lg-6 px-2 pb-4">
-                <h4>
+              <session class="left col-md-6 px-lg-2 pb-lg-4">
+                <h4 class="left_txt">
                   Subscribe Us to join our <br />
                   Community
                 </h4>
-                <span>Newsletter</span>
+                <span class="left_sub">Newsletter</span>
               </session>
-              <session class="right col-lg-6 px-3">
+              <session class="right col-md-6 px-lg-3 mt-md-0 mt-4">
                 <form action="#" class="d-flex">
                   <input
-                    class="form-control p-2"
+                    class="form-control p-2 input_night_mode"
                     type="email"
                     placeholder="Enter your email"
                   />
-                  <button class="btn px-4 py-3">Send</button>
+                  <button class="btn px-4 py-3 send">Send</button>
                 </form>
               </session>
             </div>
             <div class="row px-lg-3">
-              <div class="item col-lg-2 px-lg-4">
+              <div class="item col-lg-2 col-sm-6 mt-sm-5 px-lg-4">
                 <h6 class="mb-3">Archives</h6>
                 <ul>
                   <li>
@@ -363,7 +336,7 @@
                 </ul>
               </div>
 
-              <div class="item col-lg-3 ps-lg-5 pe-lg-2">
+              <div class="item col-lg-3 col-sm-6 mt-sm-5 ps-lg-5 pe-lg-2">
                 <h6 class="mb-3">Categories</h6>
                 <ul>
                   <li>
@@ -392,7 +365,7 @@
                 </ul>
               </div>
 
-              <div class="item col-lg-3 ps-lg-2 pe-lg-3">
+              <div class="item col-lg-3 col-sm-6 mt-sm-5 ps-lg-2 pe-lg-3">
                 <h6 class="mb-3">Contact</h6>
                 <ul>
                   <li>
@@ -414,7 +387,7 @@
                 </ul>
               </div>
 
-              <div class="item col-lg-4 ps-lg-5 pe-lg-2">
+              <div class="item col-lg-4 col-sm-6 mt-sm-5 ps-lg-5 pe-lg-2">
                 <h6 class="mb-3">About</h6>
                 <ul>
                   <li>
@@ -445,24 +418,46 @@
       <div class="copyright text-center">
         <p class="py-3 m-0">
           &copy;2023 Studious. All Rights Reserved | WordPress Theme by
-          <br>
+          <br />
           <span>W3layous.</span>
         </p>
       </div>
     </footer>
 
-    <a href="#" class="cd-top text-replace js-cd-top back_to_top"><i class="fa-solid fa-turn-up"></i></a>
-    
+    <a href="#" class="cd-top text-replace js-cd-top back_to_top" id="backToTop"><i class="fa-solid fa-turn-up"></i></a>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
+
+    <script>
+      let mybutton = document.getElementById("backToTop");
+      var navbar = document.querySelector('.header')
+      
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+          navbar.classList.add("bg-white")
+        } else {
+          mybutton.style.display = "none";
+          navbar.classList.remove("bg-white")
+        }
+      }
+      
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+    <script src="../js/home.js"></script>
   </body>
 </html>

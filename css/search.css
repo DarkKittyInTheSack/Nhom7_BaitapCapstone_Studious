@@ -446,6 +446,22 @@ header .responsive_change_theme{
     text-decoration: underline;
 }
 
+.back_to_top{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    bottom: 15%;
+    right: 10px;
+    border-radius: 5px;
+    background: #0d369f;
+    color: white;
+}
+
+.back_to_top i{
+    line-height: 40px;
+}
+
 @media only screen and (max-width: 571px){
     .header_area .header_top_contents{
         width: 0;

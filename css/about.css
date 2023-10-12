@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.inner-banner {
+    background-image: url('./../img/bg4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    min-height: 300px;
+}
+
+
+.inner-banner .w3l-breadcrumb {
+    display: block;
+    margin: 0 auto;
+    padding-top: 120px;
+    z-index: 99;
+}
+
+.inner-banner .w3l-breadcrumb .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.inner-banner .w3l-breadcrumb .container h4 {
+    color: white;
+    font-weight: 700 !important;
+}
+
+.inner-banner .w3l-breadcrumb .container .breadcrumbs-custom-path {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #d4d4d4;
+    text-align: left;
+}
+
+.inner-banner .w3l-breadcrumb .container .breadcrumbs-custom-path a {
+    color: white;
+    text-decoration: none;
+}
+
+/*  css section vidio */
+h3.title-big {
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 600;
+}
+
+.video-section ul.w3l-right-book li span {
+    font-size: 12px;
+    margin-right: 10px;
+    opacity: 0.4;
+}
+
+.video-section .play-view {
+    left: 0;
+    right: 0;
+    top: calc(50% - 40px);
+}
+
+.video-section span.video-play-icon {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    font-size: 35px;
+    padding-left: 10px;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    -webkit-animation: ripple 1s linear infinite;
+    animation: ripple 1s linear infinite;
+    color: transparent;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #fff;
+    border: 4px solid #fff;
+    background: rgb(12 12 12 / 22%);
+}
+
+.video-section span.video-play-icon:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.left-wthree-img-video img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.about-right-faq ul li i {
+    color: #ff6e65;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.test2 {
+    height: 1px;
+}
+
+.test2 iframe {
+    height: 100%;
+}
+
+.about-right-faq ul li {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1200px) {
+    h3.title-big {
+        font-size: 35px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    h3.title-big {
+        font-size: 32px;
+        line-height: 44px;
+    }
+}
+
+@media (max-width: 375px) {
+    h3.title-big {
+        font-size: 28px;
+        line-height: 38px;
+    }
+}
+
+
+/* css cowup */
+
+.section_cowup .container .row .col-lg-3 {
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.section_cowup .container .row .col-lg-3:nth-child(1),
+.section_cowup .container .row .col-lg-3:nth-child(2),
+.section_cowup .container .row .col-lg-3:nth-child(3) {
+    border-right: 1px solid #eee;
+}
+
+.section_cowup .container .row span {
+    font-size: 46px;
+    font-weight: 600;
+    color: black;
+}
+
+.section_cowup .container .row p {
+    text-transform: uppercase;
+    color: #707070;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+/* css section Group */
+
+
+.section_group-about {
+    background: #f8f9ff;
+}
+
+.section_group-about .area-box {
+    padding: 40px 30px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #eee;
+}
+
+.section_group-about h4 a.title-head {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    display: inline-block;
+    color: #fff;
+}
+
+.section_group-about h4 a.title-head:hover {
+    color: #707070;
+}
+
+.section_group-about h4 a {
+    text-decoration: none;
+}
+
+.section_group-about .area-box span {
+    color: #0abf53;
+    background: rgb(10 191 83 / 10%);
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+}
+
+.section_group-about .area-box span.icon-style-2 {
+    color: #ffc947;
+    background: rgb(255 201 73 / 22%);
+}
+
+.section_group-about .area-box span.icon-style-3 {
+    color: #ff4f81;
+    background: rgb(255 79 129 / 15%);
+}
+
+
+
+/* human css */
+.team-block-single {
+    box-shadow: 0 20px 62px rgb(4 20 69 / 10%);
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+
+.section_team .team-grids {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.section_team .social-icons-section a.fac,
+.section_team .social-icons-section a.twitter,
+.section_team .social-icons-section a.google {
+    background: #fff;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.section_team .social-icons-section a span {
+    color: #0d369f;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.section_team .social-icons-section a:hover {
+    opacity: .8;
+}
+
+.section_team .team-info {
+    position: absolute;
+    bottom: -227px;
+    margin: 0;
+    background: rgb(8 8 8 / 29%);
+    padding: 20px 0;
+    transition: .5s all;
+    -moz-transition: .5s all;
+    width: 100%;
+    text-align: center;
+}
+
+.section_team .team-block-single:hover div.team-info {
+    bottom: 0;
+}
+
+h5.member a {
+    font-weight: 600;
+    color: #060606;
+}
+
+.section_team .team-block-single:hover h5.member a {
+    color: #ff6e65;
+}
+
+.section_team .team-block-single h5.member.active a:hover {
+    color: #060606;
+}
+
+.section_team .team-grids img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+/* css photo */
+
+.section_end .container .title-big {
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 600;
+}
+
+.section_end .container .col-lg-6>p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #707070;
+    letter-spacing: .4px;
+}
+
+.section_end .container .row li {
+    list-style: none;
+    color: #707070;
+}
+
+.section_end .container .row li i {
+    color: #ff6e65;
+    padding-right: 10px;
+}
+
+.section_end .container .about-2-secs-right img {
+    max-width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+
+@media (max-width: 1200px) {
+    h3.title-big {
+        font-size: 35px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    h3.title-big {
+        font-size: 32px;
+        line-height: 44px;
+    }
+}
+
+@media (max-width: 375px) {
+    h3.title-big {
+        font-size: 28px;
+        line-height: 38px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section_group-about .area-box {
+        padding: 30px 20px;
+    }
+}

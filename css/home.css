@@ -400,8 +400,8 @@ header .responsive_change_theme{
     display: none;
 }
 
-.owl-carousel .owl-item .item .item_img .item_title .container .title button,
-.owl-carousel .owl-item .item .item_img2 .item_title .container .title button{
+.owl-carousel .owl-item .item .item_img .item_title .container .title a,
+.owl-carousel .owl-item .item .item_img2 .item_title .container .title a{
     font-size: 16px;
     color: #000;
     background: #fff;
@@ -418,15 +418,15 @@ header .responsive_change_theme{
     transition: all 0.5s;
 }
 
-.owl-carousel .owl-item .item .item_img .item_title .container .title button:hover,
-.owl-carousel .owl-item .item .item_img2 .item_title .container .title button:hover
+.owl-carousel .owl-item .item .item_img .item_title .container .title a:hover,
+.owl-carousel .owl-item .item .item_img2 .item_title .container .title a:hover
 {
     background: #ff6e65;
     color: #fff;
 }
 
-.owl-carousel .owl-item .item .item_img .item_title .container .title button:hover i,
-.owl-carousel .owl-item .item .item_img2 .item_title .container .title button:hover i{
+.owl-carousel .owl-item .item .item_img .item_title .container .title a:hover i,
+.owl-carousel .owl-item .item .item_img2 .item_title .container .title a:hover i{
     color: #fff;
 }
 
@@ -792,7 +792,7 @@ header .responsive_change_theme{
     color: #707070;
 }
 
-.contact_us .container button{
+.contact_us .container a{
     background: #ff6e65;
     color: #fff;
     font-size: 16px;
@@ -800,7 +800,7 @@ header .responsive_change_theme{
     transition: all 0.5s;
 }
 
-.contact_us .container button:hover{
+.contact_us .container a:hover{
     background: #0d369f;
     color: #fff;
 }

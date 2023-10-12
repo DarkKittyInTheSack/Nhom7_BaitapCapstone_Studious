@@ -80,3 +80,96 @@
 .previous_post a:hover{
     color: #ff6e65;
 }
+
+
+
+
+
+
+/* comment  */
+
+
+
+.comment {
+    border-radius: 8px;
+    border: 1px solid #eee;     
+}
+.comment .comment_content .wordpress-commenter{
+    padding: 20px;
+}
+.comment .comment_content .wordpress-commenter img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.comment .comment_content button {
+    background: none;
+    border:none;
+    color: #0d369f;
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    /* display: none; */
+}
+
+.comment textarea{
+    border: 1px solid #eee;
+    outline: none;
+    width: 100%;
+    transition: 0.5s;
+}
+.comment .comment_content .input-reply textarea:focus{
+    border-color: #ff6e65; 
+}
+
+.comment .input-reply .input-comment{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.comment .input-reply .input-comment label {
+    font-size: 16px;
+    font-weight: 300;
+    color: gray;
+}
+.comment .comment_content .input-reply input {
+    width: 100%;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 15px;
+    transition: 0.5s;
+    outline: none;
+}
+.comment .comment_content .input-reply input:focus{
+    border-color: #ff6e65;
+}
+.comment .form-reply p {
+    margin-top: 20px;
+}
+/* .comment .form-reply p:last-child {
+    margin-top: 20px;
+} */
+.comment .form-reply h4 {
+    font-weight: 700;
+}
+.comment .form-reply h4 button.cancel-reply{
+    margin-left: 10px;
+}
+.comment .form-reply button.btn-post-comment{
+    margin: 10px 0 10px 0;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 8px;
+    background-color: #ff6e65;
+    font-weight: 500;
+    color: white;
+    /* position: absolute; */
+    /* right: 0; */
+    text-align: right;
+    transition: 0.5s;
+}
+.comment .form-reply button.btn-post-comment:hover{
+    background-color: #0d369f;
+}

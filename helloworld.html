@@ -114,16 +114,23 @@
     <!-- BLOG POSTS  content -->
     <section class="blogposts" style="background-image: url(./img_blogpots/blogposts_img2.jpg);">
       <div class="title">
-        <h2>Blog Pots</h2>
-        <a href="#" class="text-secondary">Home</a>
+        <h2>Blog Single</h2>
+        <ul>
+          <a href="">Home</a>
+          »
+          <a href="">Design</a>
+          »
+          <a href="" class="disabled">Hello World!</a>
+        </ul>
       </div>
     </section>
     <main>
       <div class="container py-md-5 py-4">
         <div class="blogposts_content d-flex justify-content-between"> 
+          <!-- blogposts left  -->
           <div class="bp_left col-8">
             <!-- bp_card  -->
-          <div class="bp_card">
+            <div class="bp_card">
               <div class="card">
                 <img src="./img_blogpots/blogposts_img3.jpg" class="card-img-top rounded-2 mb-3" alt="">
                 <div class="card-body">
@@ -148,8 +155,12 @@
                 </div>
               </div>
 
-          </div>
-          <div class="bp_w3layouts d-flex text-center align-self-center p-3 border-4">
+            </div>
+
+
+
+
+           <div class="bp_w3layouts d-flex text-center align-self-center border-4">
             <div class="logo_w3 col-3 px-3 text-center  align-self-start">
               <a href="#" class="w-auto"><img class="w-100" src="./img_blogpots/logo_w3layout_bigsize1.jpeg" alt=""></a>
             </div>
@@ -162,14 +173,99 @@
                 <a href=""><i class="fa-brands fa-instagram"></i></a>
               </div>
             </div>
-          </div>
-          <div class="previous_post">
+            </div>
+
+
+
+            <div class="previous_post">
               <a href="#">
                 <i class="fa-solid fa-arrow-left"></i> 
                 <span>Previous Post</span>
               </a>
+            </div>
+
+
+
+            <div class="comment">
+            <div class="comment_title">
+              <h3>One thought on "Hello World!"</h3>
+            </div>
+
+
+            <!-- comment content  -->
+            <div class="comment_content">
+              <div class="wordpress-commenter ">
+                <img src="./img_blogpots/logo_w3layout_bigsize1.png" alt="">
+                  <di  class="commenter-content d-flex flex-column">
+                    <div class="title d-flex align-items-center">
+                      
+                      <div class="title-main">
+                        <h4 class="fw-bold">A WordPress commenter</h4>
+                        <p>April 16, 2021 at 9:33 am</p>
+                      </div>
+                      <a class="btn btn-primary" type="radio" data-bs-toggle="collapse" href="#reply" aria-expanded="false" aria-controls="reply">
+                      reply
+                      </a>
+                  </div>
+                  <div class="content-main">
+                    <p>Hi, this is a comment
+                      To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.
+                      <br>Commenter avatars come from <span class="fs-4 fw-bold"><a href="https://gravatar.com/" style="text-decoration: none; color: black;">Gravatar</a></span></p>
+                  </div>
+
+
+
+
+                <!-- reply comment  -->
+                  <div class="collapse" id="reply">
+                    <h4>Reply To A WordPress Commenter 
+                      <small>
+                        button
+                      </small>
+                    
+                     <p>Your email address will not be published. Required fields are marked*</p>
+
+
+                     <!-- Form reply  -->
+                      <div class="input-reply d-flex flex-column">
+                      <label for="comment">Comment*</label>
+                      <textarea name="comment" id="comment" cols="30" rows="10" ></textarea>
+                      <div class="input-comment">
+                        <label for="name">Name *</label>
+                        <input type="text" name="name" id="name">
+                      </div>
+                      <div class="input-comment">
+                        <label for="name">Email *</label>
+                        <input type="email" name="email" id="email">
+                      </div>
+                      <div class="input-comment">
+                        <label for="website">Website *</label>
+                        <input type="text" name="website" id="website">
+                      </div>
+                      </div>
+
+
+                      <p> Save my name, email, and website in this browser for the next time I comment.</p>
+                      <button class="btn-post-comment">Post comment</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- RESPOND -->
+            <div class="collapse" id="respon">
+             
+            </div>
           </div>
 
+
+
+
+
+          <!-- RESPOND  -->
+          
 
           
         </div>
@@ -340,6 +436,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="./backtotop.js"></script>
+    <!-- <script src="./backtotop.js"></script> -->
+    
   </body>
 </html>

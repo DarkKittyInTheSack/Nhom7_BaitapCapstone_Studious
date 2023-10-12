@@ -75,7 +75,9 @@ html,body {
     color: #FF6E65;
 }
 
-
+.address .right iframe {
+    border-radius: 10px;
+}
 /* .input_contact */
 /* .input_contact .title-main{
     
@@ -115,7 +117,7 @@ html,body {
 
 .input_contact .input-left img{
     width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .input_contact .input-right{
@@ -163,3 +165,4 @@ html,body {
 .input_contact .input-right button:hover {
     background-color:#0d369f;
 }
+

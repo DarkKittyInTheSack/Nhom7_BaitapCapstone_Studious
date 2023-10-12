@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .inner-banner {
     background-image: url('./../img/bg4.jpg');
     background-repeat: no-repeat;
@@ -43,49 +50,71 @@
 }
 
 /*  css section vidio */
-/*  css cho toàn bộ section gọi theo class */
-.vidio_content,
-.section_cowup {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-.vidio_content .container {
-    display: flex;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-
-}
-
-.vidio_content .container .left_container {
-    width: 50%;
-    padding-left: 15px;
-    padding-right: 30px;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.vidio_content .container .right_container {
-    width: 50%;
-}
-
-.vidio_content .container .left_container>h3 {
+h3.title-big {
     font-size: 45px;
     line-height: 55px;
     font-weight: 600;
 }
 
-.vidio_content .container .left_container>p {
-    font-size: 16px;
-    line-height: 28px;
-    color: #707070;
-    letter-spacing: .4px;
+.video-section ul.w3l-right-book li span {
+    font-size: 12px;
+    margin-right: 10px;
+    opacity: 0.4;
 }
 
-/* right vidio */
+.video-section .play-view {
+    left: 0;
+    right: 0;
+    top: calc(50% - 40px);
+}
+
+.video-section span.video-play-icon {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    font-size: 35px;
+    padding-left: 10px;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    -webkit-animation: ripple 1s linear infinite;
+    animation: ripple 1s linear infinite;
+    color: transparent;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #fff;
+    border: 4px solid #fff;
+    background: rgb(12 12 12 / 22%);
+}
+
+.video-section span.video-play-icon:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.left-wthree-img-video img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.about-right-faq ul li i {
+    color: #ff6e65;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.test2 {
+    height: 1px;
+}
+
+.test2 iframe {
+    height: 100%;
+}
+
+.about-right-faq ul li {
+    display: flex;
+    align-items: center;
+}
 
 @media (max-width: 1200px) {
     h3.title-big {
@@ -107,59 +136,6 @@
         line-height: 38px;
     }
 }
-
-
-.vidio_content .right_container .img-fluid {
-    width: 100%;
-    border-radius: 8px;
-
-}
-
-.vidio_content .right_container .hinh_nen {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-}
-
-.vidio_content .right_container button {
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    left: 50%;
-    background: transparent;
-    border: none;
-
-}
-
-.vidio_content .right_container button i {
-    font-size: 30px;
-    color: white;
-    transition: all 0.5s;
-}
-
-.vidio_content .right_container button i:hover {
-    font-size: 40px;
-}
-
-
-.vidio_content .right_container .video_1 {
-    display: none;
-    /* chỗ này để ẩn cái clip */
-}
-
-/* .vidio_content .right_container .button_click {
-    position: absolute;
-    z-index: 2;
-    top: 100;
-    left: 0;
-    width: 300px;
-    height: 300px;
-} */
-
-
-
-
 
 
 /* css cowup */
@@ -241,11 +217,7 @@
     background: rgb(255 79 129 / 15%);
 }
 
-@media (max-width: 480px) {
-    .section_group-about .area-box {
-        padding: 30px 20px;
-    }
-}
+
 
 /* human css */
 .team-block-single {
@@ -345,4 +317,32 @@ h5.member a {
     max-width: 100%;
     border-radius: 8px;
     display: block;
+}
+
+
+@media (max-width: 1200px) {
+    h3.title-big {
+        font-size: 35px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    h3.title-big {
+        font-size: 32px;
+        line-height: 44px;
+    }
+}
+
+@media (max-width: 375px) {
+    h3.title-big {
+        font-size: 28px;
+        line-height: 38px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section_group-about .area-box {
+        padding: 30px 20px;
+    }
 }

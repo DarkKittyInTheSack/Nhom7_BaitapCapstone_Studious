@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
 section .backgroud404 {
     background: url('./../img/error.jpg');
     background-position: center;
@@ -32,10 +39,14 @@ section .container .search {
     position: relative;
 }
 
+section .container .mobitest {
+    max-width: 90%;
+}
+
 section .container .search .button1 {
     padding: 10px 40px 10px 20px;
     font-size: 16px;
-    color: var(--heading-color);
+    color: #060606;
     border: 2px solid rgb(255 255 255 / 29%);
     border-radius: 35px;
     background: #fff;
@@ -106,4 +117,24 @@ section .left_content .backtohome {
 
 .back-to-top i {
     transform: rotate(90deg)
+}
+
+@media (max-width: 912px) {
+    section .backgroud404 {
+        background: url('./../img/error.jpg');
+        background-position: center;
+        background-size: cover;
+        min-height: 50vh;
+    }
+
+    .left_content {
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+
+    .right_no_content {
+        display: none;
+    }
+
 }

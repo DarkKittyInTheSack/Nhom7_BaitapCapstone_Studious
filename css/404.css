@@ -138,3 +138,11 @@ section .left_content .backtohome {
     }
 
 }
+@media (min-width:913px) {
+    section .backgroud404 {
+        background: url('./../img/error.jpg');
+        background-position: center;
+        background-size: cover;
+        min-height: 40vh;
+    }
+}

@@ -349,29 +349,6 @@ header .responsive_change_theme{
     color: #ffffff;
 }
 
-.back_to_top{
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    bottom: 15%;
-    right: 10px;
-    border-radius: 5px;
-    background: #0d369f;
-    color: white;
-    transition: all 0.5s;
-}
-
-.back_to_top:hover{
-    background: #037ef3;
-}
-
-.back_to_top i,
-.back_to_top i:hover{
-    line-height: 40px;
-    color: #fff;
-}
-
 @media screen and (max-width: 991px){
     .header_area .header_top_contents{
         display: none!important;
